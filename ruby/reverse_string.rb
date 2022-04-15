@@ -1,6 +1,10 @@
 def reverse_string(str)
-  str.chars
-  
+  string = str.chars
+  newString = []
+  string.reverse_each do |char|
+    newString << char
+  end
+  newString.join
 end
 
 if __FILE__ == $PROGRAM_NAME
